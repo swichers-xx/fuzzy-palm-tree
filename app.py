@@ -15,9 +15,9 @@ auth = BasicAuth(app)
 @limiter.limit('10/minute')
 @auth.login_required
 def power():
-  """
-  Controls the power state of a remote Windows server.
-
+#  """
+#  Controls the power state of a remote Windows server.
+#
   Request body:
     {
       "command": "Stop-Computer",
